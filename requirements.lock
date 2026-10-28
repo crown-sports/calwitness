@@ -1,0 +1,10 @@
+# Runtime closure used for the 0.1.0 release and synthetic evidence.
+# Install with: python -m pip install -r requirements.lock
+icalendar==7.3.0
+recurring-ical-events==3.8.2
+tzdata==2026.5
+python-dateutil==2.9.0.post0
+x-wr-timezone==2.0.1
+six==1.17.0
+click==8.5.0
+typing-extensions==4.16.0

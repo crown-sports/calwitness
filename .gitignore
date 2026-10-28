@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+docs/demo/*.html
+docs/demo/*.json
+docs/demo/files/
+docs/demo/.nojekyll
+examples/report.*

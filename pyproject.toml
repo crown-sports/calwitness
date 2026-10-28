@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calwitness"
+version = "0.1.0"
+description = "Offline, bounded occurrence comparison for two iCalendar exports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "crown-sports"}]
+dependencies = [
+  "icalendar==7.3.0",
+  "recurring-ical-events==3.8.2",
+  "tzdata==2026.5",
+  "python-dateutil==2.9.0.post0",
+  "x-wr-timezone==2.0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.14", "build>=1.2"]
+
+[project.scripts]
+calwitness = "calwitness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 99
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

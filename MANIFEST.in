@@ -1,0 +1,8 @@
+include LICENSE README.md CONTRIBUTING.md CHANGELOG.md
+include requirements.lock
+recursive-include examples *.ics
+recursive-include docs *.md *.py
+recursive-include tests *.py
+exclude examples/report.*
+recursive-exclude docs/demo *.html *.json *.ics .nojekyll
+prune docs/demo/files
